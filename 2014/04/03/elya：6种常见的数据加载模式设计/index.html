@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>elya：6种常见的数据加载模式设计 | 番茄范-知易行难</title>
+
+  
+  <meta name="author" content="wanghuli">
+  
+
+  
+  <meta name="description" content="本文转载于：http://elya.cc/2014/03/31/loading/设计师在进行APP设计的设计时，往往会更加专注于界面长什么样，界面和界面之间怎么跳转，给予用户什么样的操作反馈，却偏偏特别容易忽略掉一个比较重要的环节，就是APP数据加载中的设计，所以会导致我们看到的APP，往往有着华丽">
+  
+
+  
+  
+  <meta name="keywords" content="">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="elya：6种常见的数据加载模式设计"/>
+
+  <meta property="og:site_name" content="番茄范-知易行难"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="番茄范-知易行难" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">番茄范-知易行难</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/">主页</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>elya：6种常见的数据加载模式设计</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2014/04/03/elya：6种常见的数据加载模式设计/" rel="bookmark">
+        <time class="entry-date published" datetime="2014-04-03T13:00:08.000Z">
+          2014-04-03
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>本文转载于：<a href="http://elya.cc/2014/03/31/loading/" target="_blank" rel="external">http://elya.cc/2014/03/31/loading/</a><br><br>设计师在进行APP设计的设计时，往往会更加专注于界面长什么样，界面和界面之间怎么跳转，给予用户什么样的操作反馈，却偏偏特别容易忽略掉一个比较重要的环节，就是APP数据加载中的设计，所以会导致我们看到的APP，往往有着华丽的启动界面，然后就是漫长的数据加载等待，甚至在无网络的时候，整个处于不可用状态。那么我们怎么处理好界面交互中的加载设计，保证体验无缝衔接，保证用户没有漫长的等待感，而可以轻松自在的享受等待，对加载后的内容有明确的预期呢？<br>今天这篇文章，会介绍6种常见的加载模式设计，和3种减少等待感的具体手法，希望对追求极致体验的产品人有帮助。<br><br>&nbsp;<strong>一、6种常见的数据加载模式</strong><br><br>目前APP设计中，合理的数据加载方式，主要分如下六种：1.全屏加载 2.优先加载 3.整页加载 4.自动加载 5.智能加载&nbsp; 6.离线加载，这六种方式，适用于不同的需求场景，也适用于不同类型的APP，让我们来一一解读。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/11.png" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/11.png" alt=""></a><br><br><a href="http://elya.cc/wp-content/uploads/2014/03/21.png" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/21.png" alt=""></a><br><br>&nbsp;<strong>1.&nbsp;全屏加载</strong><br><br>全屏加载就是整个屏幕白屏进行数据加载，一般会有菊花转配合，常用于手机网页的加载中。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/8.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/8.jpg" alt=""></a><a href="http://elya.cc/wp-content/uploads/2014/03/10.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/10.jpg" alt=""></a><br><br>网易新闻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Feedly<br><br>优点是能保证内容的整体性，全部加载完才能够系统化的阅读。<br>缺点比较明显，就是有非常强烈的等待感，3s以上会产生焦躁情绪，所以在地铁等信号不好的地方，使用手机网页获取内容实在是比较灾难的一件事情。<br>一般这种情况会配合有明确进度标识的进度条。<br><br>&nbsp;<strong>2.优先加载</strong><br><br>如果一个页面有图片有文字，加载图片比较慢的情况下，可以先把文字都加载出来，保证用户可以顺畅阅读，然后再加载比较费流量的图片。如果是用这一种加载方式，活动页什么的，千万不能重要信息全部放在头图上，导致加载不出来。重要操作也不能用图片按钮，否则也会有操作显示不出来的风险。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/7.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/7.jpg" alt=""></a><a href="http://elya.cc/wp-content/uploads/2014/03/9.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/9.jpg" alt=""></a><br><br>淘宝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网易新闻<br>优点是可以帮助用户快速阅读内容，了解信息。<br>缺点是也许会丢失掉重要的关键信息，无法建立信息获取的闭环。<br>这种加载形式更加适用于内容阅读型的APP。<br><br>&nbsp;<strong>3.整页加载</strong><br><br>当当前页与下一页是整页切换的时候，可以考虑采用整页加载的形式，但是要保证每个页面的数据量不是特别的大。<br>优点是能保证每个页面的完整性，体验比较整体。<br>缺点是不好保证整页的加载效率，且有可能影响浏览的流畅度。<br>一般适用于宫格图片模式、全屏图片模式、网状详情页模式。<br><br>&nbsp;<strong>4.自动加载</strong><br><br>自动加载适用于长列表的情况，可以设定规则，默认加载20条，滚动第20条的时候，自动再加载20条。用这种手法，可以营造一种无极限浏览的错觉，很容易的把用户吸引住，一直向下滚，一直向下滚。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/11.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/11.jpg" alt=""></a><a href="http://elya.cc/wp-content/uploads/2014/03/6.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/6.jpg" alt=""></a><br><br>新浪微博&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天头条<br>优点是把用户代入无尽浏览模式，让用户一直向下滚动，不需要手动点击下一页。<br>缺点是没有尽头，容易迷失，不方便快速索引定位到某个内容。<br>适用于瀑布流、长列表、商品列表等情况。<br><br>&nbsp;<strong>5.智能加载</strong><br><br>当用户处于WiFi下时，不会受限于流量和访问速度，大可以加载大图片、大图标，甚至直接播放视频动画，但是如果用户处于非WiFi的模式下，则需要差异化的处理成小图或者无图模式，视频和动画直接用一个占位符标识就好了，这种根据网络状况，智能调整的加载方式，叫做智能加载。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/15.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/15.jpg" alt=""></a><a href="http://elya.cc/wp-content/uploads/2014/03/16.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/16.jpg" alt=""></a><br><br>淘宝<br>例如淘宝APP，当网络切换到GPRS或3G的时候，首先会提醒用户网络变化，然后查看商品详情的时候，图片从自动下载，变换成点击加载，并且加载的只是精简版图文详情，防止多图造成的流浪浪费。<br><br>优点是根据具体场景来控件流量和加载速度。<br>缺点是不一定真实有效的命中用户需求，所以还是需要给予用户一定的查看详情的入口，或者是设置项。<br>适用于有大量图片或视频的APP，如电商类或在线视频类APP。<br><br>&nbsp;<strong>6.离线加载</strong><br><br>当用户没网的时候，往往很多功能都不能用了，内容也无法加载出来，导致APP变得根本不可用，这时候就要考虑预加载+离线缓存的设计了。首先在有网的时候把数据提前加载下来，缓存到本地，当没网的时候，直接加载已经缓存下来的内容。一般会提供给用户选择，是否开启有WiFi的情况下预加载功能，或者是否开始WiFi下全部离线缓存的功能。这样就能保证在地铁上，过个隧道就看不了内容的尴尬了。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/17.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/17.jpg" alt=""></a><a href="http://elya.cc/wp-content/uploads/2014/03/18.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/18.jpg" alt=""></a><br><br>窄播&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今日头条<br>优点是解决了没网获取数据的问题，且节约了流量，保证了流畅。<br>缺点是占用本地存储空间，而且有时候预加载的内容根本没有用到。<br>适用于小说阅读、新闻阅读、视频类APP。<br><br>&nbsp;<strong>二、4种减少等待感的具体手法</strong>&nbsp;<strong>1.&nbsp;用非模态的加载方式</strong><br><br>尽量使用非模态的加载方式，就是加载的过程是不打算用户，不需要等待加载完就可以做别的事情的，如下示意：<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/41.png" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/41.png" alt=""></a><br><br>用非模态的加载方式，用户可以利用做别的事情，打发等待的时间，而不用傻傻等待数据加载完成，大大降低了等待的焦躁感。即便是模态的加载，也要给一个取消的选项，放在不耐烦的情况下还没法取消。<br><br>&nbsp;<strong>2.&nbsp;情趣化的加载动画</strong><br><br>加载的过程如此的枯燥乏味，为什么我们不能做点什么让用户觉得好受一点呢？有创意的设计师们设计了各种呆萌可爱的加载动画。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/2.gif" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/2.gif" alt=""></a><br><br>Google的加载动画<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/3.gif" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/3.gif" alt=""></a><br><br>Digg的加载动画<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/1.gif" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/1.gif" alt=""></a><br><br>这些加载动画让等待的过程变成了一种享受，用户能感受到设计师的情怀，体会新鲜有趣的等待过程。提升了产品情趣化的设计语言，让等待的焦躁感一扫而空。<br><br>&nbsp;<strong>3.&nbsp;漫长加载告知进度</strong><br><br>如果是时间较长的加载过程，最好能清晰的告知过程进度，这时候就需要采用有进度的加载设计了。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/14.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/14.jpg" alt=""></a><a href="http://elya.cc/wp-content/uploads/2014/03/12.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/12.jpg" alt=""></a><br><br>&nbsp;<br><br>百度APP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dropbox<br><br>浏览器的进度条是一种较为常见的进度告知设计，通过这个进度告知，让用户有了更加明确的知情权，也能更好的预期到加载完成的时间<br>但即便是小小的进度条，也有很多的设计技巧在里面。一个非常经典的体验设问，同样是3s的加载时间，匀速的进度条、先慢后快的进度条、先快后慢的进度条，哪个让用户感觉上最快？经过科学的实验证实，先慢后快的进度条是让用户心理感受上最快的设计。这是因为用户最容易记住最后一瞬间的感觉，如果最后一瞬间，感知到了快，就觉得顺畅了。<br><br>&nbsp;<strong>4.&nbsp;尽量提前加载</strong><br><br>尽可能的利用预加载或有WiFi的情况下离线缓存的方式，把内容提前加载下来，这样能做到最大限度的降低加载给用户带来的卡顿感。如果能判断出来用户下一步要做的事情，提前帮用户加载相应的内容，肯定是最符合需求场景的事情。当我开始读第一页的时候，第二页第三页就开始陆续缓存下来了<br><br>最后，不得不说，细微之处见真章，看似不起眼的数据加载，往往都是程序员哥哥一时兴起随便定义的，都含有这么多设计门道，作为体验设计师的你，如果不了解个中奥妙，你是否有足够的信心拍着胸脯说你能对体验负责呢？总结一下，6种常见的数据加载模式：1.全屏加载 2.优先加载 3.整页加载 4.自动加载 5.智能加载&nbsp; 6.离线加载，4种减少等待感的具体手法——1.用模态的加载方式 2.情趣化的加载动画 3.漫长加载告知进度 4.尽量提前加载。<br><br></p>
+
+<p><a href="http://huliz.lofter.com" target="_blank" rel="external">LOFTER：王狐狸@PM</a>&nbsp;&nbsp;&nbsp;<a href="http://huliz.lofter.com/post/298104_104414a" target="_blank" rel="external">http://huliz.lofter.com/post/298104_104414a</a></p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2016 wanghuli
+    
+  </p>
+</footer>
+    
+  </div>
+</div>
+</body>
+</html>

@@ -1,429 +1,642 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   
-  <title>第 3 页 | 番茄范-知易行难</title>
-
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://blog.fanqiefan.com">
+  <title>番茄范-知易行难</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="番茄范-知易行难">
+<meta property="og:url" content="http://blog.fanqiefan.com/page/3/index.html">
+<meta property="og:site_name" content="番茄范-知易行难">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="番茄范-知易行难">
   
-  <meta name="author" content="wanghuli">
+    <link rel="alternative" href="/atom.xml" title="番茄范-知易行难" type="application/atom+xml">
   
-
   
-
+    <link rel="icon" href="/favicon.png">
   
-
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  
-
-  <meta property="og:site_name" content="番茄范-知易行难"/>
-
-  
-  <meta property="og:image" content="/favicon.ico"/>
+  <link rel="stylesheet" href="/main.css">
   
 
-  <link href="/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="番茄范-知易行难" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 </head>
 
-
 <body>
-<div class="blog">
-  <div class="content">
-
-    <header>
-  <div class="site-branding">
-    <h1 class="site-title">
-      <a href="/">番茄范-知易行难</a>
-    </h1>
-    <p class="site-description"></p>
-  </div>
-  <nav class="site-navigation">
-    <ul>
-      
-        <li><a href="/">主页</a></li>
-      
-        <li><a href="/archives">归档</a></li>
-      
-    </ul>
-  </nav>
-</header>
-
-    <main class="site-main posts-loop">
-    
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2014/04/03/APP设计中便捷的单手操作/"><span>APP设计中便捷的单手操作</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2014/04/03/APP设计中便捷的单手操作/" rel="bookmark">
-        <time class="entry-date published" datetime="2014-04-03T14:51:54.000Z">
-          2014-04-03
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>转自网易UED <a href="http://uedc.163.com/11389.html" target="_blank" rel="external">http://uedc.163.com/11389.html</a><br><br><img src="http://uedc.163.com/wp-content/uploads/2013/12/APP%E8%AE%BE%E8%AE%A1%E4%B8%AD%E4%BE%BF%E6%8D%B7%E7%9A%84%E5%8D%95%E6%89%8B%E6%93%8D%E4%BD%9C%E5%8D%9A%E6%96%87banner1.jpg" alt=""><br><br>探讨APP的手势操作前，我想先介绍两篇文章来了解用户是如何使用手机的，以及触控屏是如何来感应我们的操作的。<br><br><strong>用户是如何使用手机的</strong><br><br>Steven Hoober在《How Do Users Really Hold Mobile Devices?》[1]一文中指出，通过两个月的时间对1333名手机用户在公众场所（街道、机场、汽车站、咖啡馆、火车上、汽车上等）使用习惯的观察得出以下结论：<br><br>①780名用户是通过滑动、点击、打字等来操作屏幕，其他用户则仅仅是用手机来收听、观看、打电话。<br><br>②49%的用户通过单手操作，36%一手拿着手机一手操作，另有15%双手操作。<br><br>③在单手操作用户中，有33%的用户用左手拇指来操作。<br><br>④用户经常变换操作姿势和手势。<br><br>49%的单手操作用户是以下两种姿势（左手用户相反）。绿色代表容易点击区域，黄色为拇指伸展可到点击区域，红色区域超出单手可点击范围。<br><br><a href="http://uedc.163.com/11389.html/holdphones_figure-2" target="_blank" rel="external"><img src="http://uedc.163.com/wp-content/uploads/2013/12/HoldPhones_Figure-2.png" alt=""></a><br><br><strong>触控屏是如何来感知操作的</strong><br><br>Steven Hoober通过研究在《Common Misconceptions About Touch》[2]中指出，因为我们的手指是三维立体且柔软的，在操作屏幕的时候，只有手指的部分区域是和屏幕接触的，这部分区域称为接触印迹。而触控屏仅仅感知人们接触印迹的几何中心位置来出发操作，与接触印迹区域大小无关。<br><br><a href="http://uedc.163.com/11389.html/hoober-taughtabouttouch-fig2-2" target="_blank" rel="external"><img src="http://uedc.163.com/wp-content/uploads/2013/12/Hoober-TaughtAboutTouch-Fig21.png" alt=""></a><br><br>除了以上这些因素外，硬件设备的差异，用户使用移动设备时的视线角度都会影响点击操作的精准度（更多详细介绍可在文章后所附原文链接查看）。为此Steven Hoober提出为界面元素分别设计视觉目标和触控目标（即我们常说的热区）的建议。如点击文章中的网址链接（视觉目标），我们不需要精准地点击到链接上的字母，而仅仅需要触发它周围的方形区域（触控目标）即可产生跳转到该网站。在不影响视觉效果的基础上，适当放大触控区域可提高操作的精准度。<br><br>另外一个将视觉目标和触控目标分开设计的方法即为我们常说的手势操作，如上文所述手机使用过程中单手和左手操作的用户比例都比较大，好的单手操作手势设计能有效提高使用效率，减少误操作，给用户带来惊喜。为此，笔者在下文中总结了现有APP单手操作中的4类用法。<br><br><strong>手势是如何被利用的</strong><br><br>1.页面切换<br><br>在有限的屏幕空间中使用APP时，多层级、多页面切换是最频繁的操作，如果仅仅依靠大多数应用左上角的back键来返回或是点击后才能切换tab，使用起来将非常不方便，因此单手操作最常见的应用场景则是利用左右滑手势来穿行于各层级页面间。如下图网易云阅读资讯中心的tab切换。在这个手势操作中有两个关键因素影响使用体验：一是滑动过程中页面要跟随手指，这样能让用户形成对产品的控制感和更明确的层级感；二是需要有“路标”作用的页面元素作为指引。<br><br>图（1）是网易云阅读和iOS设置中的右滑操作示意。网易云阅读中，在页面任何位置轻轻右滑即可返回，iOS的返回操作手势热区在屏幕边缘。这两者的区别是，云阅读中的返回设计更多是利用用户的下意识行为，操作成本低，但同时增加了误操作的风险。iOS中用户的操作多是有意识的行为，误操作几率小，同时操作成本也增加了。这两种方式各有利弊，因此在设计中应更具实际场景定义好对手指滑动的感应范围和角度。<br><br><a href="http://uedc.163.com/11389.html/%e6%97%a0%e6%a0%87%e9%a2%98-5" target="_blank" rel="external"><img src="http://uedc.163.com/wp-content/uploads/2013/12/%E6%97%A0%E6%A0%87%E9%A2%981.jpg" alt=""></a><br><br>图（1）iPhone和网易云阅读的右滑手势热区<br><br>图（2）为网易云阅读和网易新闻的文章正文页，都能通过左滑返回，后滑进入评论页。相比之下用网易新闻显得更自然，初次用网易云阅读的用户会更容易对右滑进入评论页产生迷惑。究其原因，网易新闻在标题栏两边分别放置了“返回”和“跟帖”的页面元素，就像是分叉口的两个路标，让用户对前方的路形成心理预期。相比之下，网易云阅读的返回和评论同处于页面底部的左边，引导性不太明确。<br><br><a href="http://uedc.163.com/11389.html/%e6%97%a0%e6%a0%872-2" target="_blank" rel="external"><img src="http://uedc.163.com/wp-content/uploads/2013/12/%E6%97%A0%E6%A0%8721.png" alt=""></a><br><br>图（2）手势切换时的页面引导<br><br>2.内容呈现维度的切换<br><br>下图中Cal和数读展示了手势的另一中应用方式。日期的可拆分维度有年、月、季度、周等，不同的使用场景需要切换时间粒度，Cal利用手势上下滑动方便地切换周历和日历，利用左右滑切换日期。数读首屏，默认显示文章概要，上滑即可浏览文章详情，由此利用手势的上下左右滑动可以针对文章展开4个维度的浏览：概要，详情，上一篇，下一篇。此外，相似的手势运用还是墨迹天气等。<br><br><a href="http://uedc.163.com/11389.html/%e6%97%a0%e6%a0%87%e9%a2%983-2" target="_blank" rel="external"><img src="http://uedc.163.com/wp-content/uploads/2013/12/%E6%97%A0%E6%A0%87%E9%A2%9831.png" alt=""></a><br><br>图（3）Cal的周历、日历切换<br><br><a href="http://uedc.163.com/11389.html/%e6%97%a0%e6%a0%87%e9%a2%985-2" target="_blank" rel="external"><img src="http://uedc.163.com/wp-content/uploads/2013/12/%E6%97%A0%E6%A0%87%E9%A2%9851.png" alt=""></a><br><br>图（4）数读的文章概要和详情切换<br><br>3.将相关功能隐藏在对内容的手势操作中，扩充屏幕内容展示空间。<br><br>智能手机受尺寸限制，对用户而言首屏空间越发宝贵。如果不能在第一时间让用户得到有效信息，APP的魅力将大打折扣。然而实际设计时往往功能众多，若放在首屏，页面将会是功能按钮的堆砌，占用了有效信息的展示空间，若不放在首屏，有可能层级太深，让用户找不到方向。资讯阅读软件Digg和追剧神奇TeeVee则采用了如图（5）和图（6）所示的操作方式。Digg通过右滑手势后，可对该资讯模块进行赞、添加书签、分享等操作。TeeVee中，左滑是最常见的删除操作，右滑可查看更详细的剧目更新信息和提醒设置。这种直接操作内容的自然人机交互方式，不仅符合用户的感知习惯，也能很好地节约屏幕空间，创造沉浸式的阅读体验，这点和Windows UI的设计理念非常契合。只要对新手用户做好引导，之后的操作就非常得心应手。<br><br><a href="http://uedc.163.com/11389.html/%e6%97%a0%e6%a0%87%e9%a2%986-2" target="_blank" rel="external"><img src="http://uedc.163.com/wp-content/uploads/2013/12/%E6%97%A0%E6%A0%87%E9%A2%9861.png" alt=""></a><br><br>图（5）Digg将添加标签等内容相关操作隐藏在左滑手势之后<br><br><a href="http://uedc.163.com/11389.html/%e6%97%a0%e6%a0%87%e9%a2%987-2" target="_blank" rel="external"><img src="http://uedc.163.com/wp-content/uploads/2013/12/%E6%97%A0%E6%A0%87%E9%A2%9871.png" alt=""></a><br><br>图（6）TeeVee的手势操作<br><br>除此之外iOS自带的邮件、信息，和小清新壁纸应用拾光都有类似手势应用。<br><br>4.提炼重要功能，利用手势呼出操作<br><br>iOS的多指触控自不必说，可是需要额外的记忆成本[3]。上文提到过，在使用时最常用的手势是滑动和点击，运用得当也可以达到惊艳的效果。刷新浪微博时大家最常用的操作莫过于看和写，新浪微博将写微博的操作放在了左上角很明显的位置，但是单手难以操作，而Fuubo通过点按屏幕底部的首页键然后顺势上滑，即可触发写微博的操作，更简洁快速。如图（7）是新浪微博和Fuubo的界面功能布局对比。<br><br><a href="http://uedc.163.com/11389.html/%e6%97%a0%e6%a0%87%e9%a2%988-2" target="_blank" rel="external"><img src="http://uedc.163.com/wp-content/uploads/2013/12/%E6%97%A0%E6%A0%87%E9%A2%9881.png" alt=""></a><br><br>图（7）新浪微博和Fuubo的写微博功能呼出方式<br><br>在优酷的播放界面任何地方左右滑动可控制播放进度，上下滑动控制音量，将手指从界面众多功能中解放出来。<br><br><a href="http://uedc.163.com/11389.html/%e6%97%a0%e6%a0%879-2" target="_blank" rel="external"><img src="http://uedc.163.com/wp-content/uploads/2013/12/%E6%97%A0%E6%A0%8791.png" alt=""></a><br><br>图（8）优酷的手势运用<br><br>除此之外，Clear，Any.Do等to do应用利用下拉手势直接调出最常用的编辑新条目功能；易信双击呼出语音；多看阅读下拉书籍正文直接添加书签；Readmill在文章阅读时上下滑直接调节亮度；Solar利用上下滑手势查看不同时间点的天气。以上这些应用的共同特征都是利用简单的上下滑和点击手势呼出APP使用时最常用、触发频率最高的功能，提高使用效率。但哪些功能优先级比较高，是否容易误操作，误操作后果如何是需要慎重考虑的问题。如优酷的上下滑调节音量功能的优先级是否如此之高，在某些场合是否会令用户误操作而尴尬，这些都是需要结合使用场景去仔细斟酌的。<br><br>以上就是总结的APP设计中便捷的单手操作手势运用，关于手势界面操作还在不断学习中，欢迎大家补充和拍砖。<br><br></p>
-
-<p><a href="http://huliz.lofter.com" target="_blank" rel="external">LOFTER：王狐狸@PM</a>&nbsp;&nbsp;&nbsp;<a href="http://huliz.lofter.com/post/298104_1045625" target="_blank" rel="external">http://huliz.lofter.com/post/298104_1045625</a></p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2014/04/03/elya：6种常见的数据加载模式设计/"><span>elya：6种常见的数据加载模式设计</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2014/04/03/elya：6种常见的数据加载模式设计/" rel="bookmark">
-        <time class="entry-date published" datetime="2014-04-03T13:00:08.000Z">
-          2014-04-03
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>本文转载于：<a href="http://elya.cc/2014/03/31/loading/" target="_blank" rel="external">http://elya.cc/2014/03/31/loading/</a><br><br>设计师在进行APP设计的设计时，往往会更加专注于界面长什么样，界面和界面之间怎么跳转，给予用户什么样的操作反馈，却偏偏特别容易忽略掉一个比较重要的环节，就是APP数据加载中的设计，所以会导致我们看到的APP，往往有着华丽的启动界面，然后就是漫长的数据加载等待，甚至在无网络的时候，整个处于不可用状态。那么我们怎么处理好界面交互中的加载设计，保证体验无缝衔接，保证用户没有漫长的等待感，而可以轻松自在的享受等待，对加载后的内容有明确的预期呢？<br>今天这篇文章，会介绍6种常见的加载模式设计，和3种减少等待感的具体手法，希望对追求极致体验的产品人有帮助。<br><br>&nbsp;<strong>一、6种常见的数据加载模式</strong><br><br>目前APP设计中，合理的数据加载方式，主要分如下六种：1.全屏加载 2.优先加载 3.整页加载 4.自动加载 5.智能加载&nbsp; 6.离线加载，这六种方式，适用于不同的需求场景，也适用于不同类型的APP，让我们来一一解读。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/11.png" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/11.png" alt=""></a><br><br><a href="http://elya.cc/wp-content/uploads/2014/03/21.png" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/21.png" alt=""></a><br><br>&nbsp;<strong>1.&nbsp;全屏加载</strong><br><br>全屏加载就是整个屏幕白屏进行数据加载，一般会有菊花转配合，常用于手机网页的加载中。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/8.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/8.jpg" alt=""></a><a href="http://elya.cc/wp-content/uploads/2014/03/10.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/10.jpg" alt=""></a><br><br>网易新闻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Feedly<br><br>优点是能保证内容的整体性，全部加载完才能够系统化的阅读。<br>缺点比较明显，就是有非常强烈的等待感，3s以上会产生焦躁情绪，所以在地铁等信号不好的地方，使用手机网页获取内容实在是比较灾难的一件事情。<br>一般这种情况会配合有明确进度标识的进度条。<br><br>&nbsp;<strong>2.优先加载</strong><br><br>如果一个页面有图片有文字，加载图片比较慢的情况下，可以先把文字都加载出来，保证用户可以顺畅阅读，然后再加载比较费流量的图片。如果是用这一种加载方式，活动页什么的，千万不能重要信息全部放在头图上，导致加载不出来。重要操作也不能用图片按钮，否则也会有操作显示不出来的风险。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/7.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/7.jpg" alt=""></a><a href="http://elya.cc/wp-content/uploads/2014/03/9.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/9.jpg" alt=""></a><br><br>淘宝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网易新闻<br>优点是可以帮助用户快速阅读内容，了解信息。<br>缺点是也许会丢失掉重要的关键信息，无法建立信息获取的闭环。<br>这种加载形式更加适用于内容阅读型的APP。<br><br>&nbsp;<strong>3.整页加载</strong><br><br>当当前页与下一页是整页切换的时候，可以考虑采用整页加载的形式，但是要保证每个页面的数据量不是特别的大。<br>优点是能保证每个页面的完整性，体验比较整体。<br>缺点是不好保证整页的加载效率，且有可能影响浏览的流畅度。<br>一般适用于宫格图片模式、全屏图片模式、网状详情页模式。<br><br>&nbsp;<strong>4.自动加载</strong><br><br>自动加载适用于长列表的情况，可以设定规则，默认加载20条，滚动第20条的时候，自动再加载20条。用这种手法，可以营造一种无极限浏览的错觉，很容易的把用户吸引住，一直向下滚，一直向下滚。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/11.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/11.jpg" alt=""></a><a href="http://elya.cc/wp-content/uploads/2014/03/6.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/6.jpg" alt=""></a><br><br>新浪微博&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天头条<br>优点是把用户代入无尽浏览模式，让用户一直向下滚动，不需要手动点击下一页。<br>缺点是没有尽头，容易迷失，不方便快速索引定位到某个内容。<br>适用于瀑布流、长列表、商品列表等情况。<br><br>&nbsp;<strong>5.智能加载</strong><br><br>当用户处于WiFi下时，不会受限于流量和访问速度，大可以加载大图片、大图标，甚至直接播放视频动画，但是如果用户处于非WiFi的模式下，则需要差异化的处理成小图或者无图模式，视频和动画直接用一个占位符标识就好了，这种根据网络状况，智能调整的加载方式，叫做智能加载。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/15.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/15.jpg" alt=""></a><a href="http://elya.cc/wp-content/uploads/2014/03/16.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/16.jpg" alt=""></a><br><br>淘宝<br>例如淘宝APP，当网络切换到GPRS或3G的时候，首先会提醒用户网络变化，然后查看商品详情的时候，图片从自动下载，变换成点击加载，并且加载的只是精简版图文详情，防止多图造成的流浪浪费。<br><br>优点是根据具体场景来控件流量和加载速度。<br>缺点是不一定真实有效的命中用户需求，所以还是需要给予用户一定的查看详情的入口，或者是设置项。<br>适用于有大量图片或视频的APP，如电商类或在线视频类APP。<br><br>&nbsp;<strong>6.离线加载</strong><br><br>当用户没网的时候，往往很多功能都不能用了，内容也无法加载出来，导致APP变得根本不可用，这时候就要考虑预加载+离线缓存的设计了。首先在有网的时候把数据提前加载下来，缓存到本地，当没网的时候，直接加载已经缓存下来的内容。一般会提供给用户选择，是否开启有WiFi的情况下预加载功能，或者是否开始WiFi下全部离线缓存的功能。这样就能保证在地铁上，过个隧道就看不了内容的尴尬了。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/17.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/17.jpg" alt=""></a><a href="http://elya.cc/wp-content/uploads/2014/03/18.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/18.jpg" alt=""></a><br><br>窄播&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今日头条<br>优点是解决了没网获取数据的问题，且节约了流量，保证了流畅。<br>缺点是占用本地存储空间，而且有时候预加载的内容根本没有用到。<br>适用于小说阅读、新闻阅读、视频类APP。<br><br>&nbsp;<strong>二、4种减少等待感的具体手法</strong>&nbsp;<strong>1.&nbsp;用非模态的加载方式</strong><br><br>尽量使用非模态的加载方式，就是加载的过程是不打算用户，不需要等待加载完就可以做别的事情的，如下示意：<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/41.png" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/41.png" alt=""></a><br><br>用非模态的加载方式，用户可以利用做别的事情，打发等待的时间，而不用傻傻等待数据加载完成，大大降低了等待的焦躁感。即便是模态的加载，也要给一个取消的选项，放在不耐烦的情况下还没法取消。<br><br>&nbsp;<strong>2.&nbsp;情趣化的加载动画</strong><br><br>加载的过程如此的枯燥乏味，为什么我们不能做点什么让用户觉得好受一点呢？有创意的设计师们设计了各种呆萌可爱的加载动画。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/2.gif" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/2.gif" alt=""></a><br><br>Google的加载动画<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/3.gif" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/3.gif" alt=""></a><br><br>Digg的加载动画<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/1.gif" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/1.gif" alt=""></a><br><br>这些加载动画让等待的过程变成了一种享受，用户能感受到设计师的情怀，体会新鲜有趣的等待过程。提升了产品情趣化的设计语言，让等待的焦躁感一扫而空。<br><br>&nbsp;<strong>3.&nbsp;漫长加载告知进度</strong><br><br>如果是时间较长的加载过程，最好能清晰的告知过程进度，这时候就需要采用有进度的加载设计了。<br><br><a href="http://elya.cc/wp-content/uploads/2014/03/14.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/14.jpg" alt=""></a><a href="http://elya.cc/wp-content/uploads/2014/03/12.jpg" target="_blank" rel="external"><img src="http://elya.cc/wp-content/uploads/2014/03/12.jpg" alt=""></a><br><br>&nbsp;<br><br>百度APP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dropbox<br><br>浏览器的进度条是一种较为常见的进度告知设计，通过这个进度告知，让用户有了更加明确的知情权，也能更好的预期到加载完成的时间<br>但即便是小小的进度条，也有很多的设计技巧在里面。一个非常经典的体验设问，同样是3s的加载时间，匀速的进度条、先慢后快的进度条、先快后慢的进度条，哪个让用户感觉上最快？经过科学的实验证实，先慢后快的进度条是让用户心理感受上最快的设计。这是因为用户最容易记住最后一瞬间的感觉，如果最后一瞬间，感知到了快，就觉得顺畅了。<br><br>&nbsp;<strong>4.&nbsp;尽量提前加载</strong><br><br>尽可能的利用预加载或有WiFi的情况下离线缓存的方式，把内容提前加载下来，这样能做到最大限度的降低加载给用户带来的卡顿感。如果能判断出来用户下一步要做的事情，提前帮用户加载相应的内容，肯定是最符合需求场景的事情。当我开始读第一页的时候，第二页第三页就开始陆续缓存下来了<br><br>最后，不得不说，细微之处见真章，看似不起眼的数据加载，往往都是程序员哥哥一时兴起随便定义的，都含有这么多设计门道，作为体验设计师的你，如果不了解个中奥妙，你是否有足够的信心拍着胸脯说你能对体验负责呢？总结一下，6种常见的数据加载模式：1.全屏加载 2.优先加载 3.整页加载 4.自动加载 5.智能加载&nbsp; 6.离线加载，4种减少等待感的具体手法——1.用模态的加载方式 2.情趣化的加载动画 3.漫长加载告知进度 4.尽量提前加载。<br><br></p>
-
-<p><a href="http://huliz.lofter.com" target="_blank" rel="external">LOFTER：王狐狸@PM</a>&nbsp;&nbsp;&nbsp;<a href="http://huliz.lofter.com/post/298104_104414a" target="_blank" rel="external">http://huliz.lofter.com/post/298104_104414a</a></p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2014/02/26/苹果APP-Store的运营策略/"><span>苹果APP Store的运营策略</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2014/02/26/苹果APP-Store的运营策略/" rel="bookmark">
-        <time class="entry-date published" datetime="2014-02-26T14:05:19.000Z">
-          2014-02-26
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>分为五个部分<br><br>一、精品推荐<br><br>焦点图轮播<br><br>独家首发和与时间活动相关的高质量APP，一般来说是大厂APP或者已经具有一定知名度的APP。<br><br>优秀新APP<br><br>包括最新上架的APP和最近更新的APP<br><br>类型应用集锦<br><br>本周最佳APP、优秀游戏APP集锦、优秀儿童APP、APPLE官方APP。<br><br>优秀新游戏<br><br>最新上架的优秀游戏APP，因为APP Store采用与开发商分成的策略，游戏类APP是收费产生的主力。<br><br>单个优秀软件推荐<br><br>一般3至4个厂商APP加上官方APP推荐。<br><br>以往编辑推荐<br><br>给用户查看以往推荐的优秀APP。<br><br></p>
-
-<p><a href="http://huliz.lofter.com" target="_blank" rel="external">LOFTER：王狐狸@PM</a>&nbsp;&nbsp;&nbsp;<a href="http://huliz.lofter.com/post/298104_e5dee8" target="_blank" rel="external">http://huliz.lofter.com/post/298104_e5dee8</a></p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2013/11/20/智能路由器与未来智能生活/"><span>智能路由器与未来智能生活</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2013/11/20/智能路由器与未来智能生活/" rel="bookmark">
-        <time class="entry-date published" datetime="2013-11-20T12:41:50.000Z">
-          2013-11-20
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/MBCMTmBohr7VtDf4tYwTBQ==/2035064081718200417.jpg" alt=""><br><br>今天小米发布了新玩具—MIWIFI。一款智能路由器。智能路由器大战至此揭开序幕。<br><br>一时间，360红衣教主也宣布智能路由器正在研发之中，即将上市。果壳网也宣称即将发布智能路由器。而早在这之前，号称国内第一款智能路由器的极路由早已在业内掀起一股声势浩大的智能浪潮。今天，极路由创始人王楚云甚至发文称“2013年是智能路由器元年”。<br><br>为什么一个小小的路由器能吸引这么大的关注力，引得众多巨头争相进入？<br><br>首先我们来看一下目前智能路由器比较受欢迎的几个功能。<br><br>&gt; 1、<strong>多拨</strong>，提升网速这是很多人最关心的功能，由于运营商线制了端口网速，于是多拨的功能就出来了，通过交换机和路由器的配合，通过路由对多个端口进行拨号，于是就能实现了下载速度成倍的增长，单线多拨、多线多拨，看着自己的2M宽带能够有4M甚至8M的速度，这恐怕是折腾路由最大的动力了。<br>&gt;<br>&gt; 2、<strong>脱机下载</strong>，顾名思义，脱机下载就是不用开电脑就能够下载文件，用路由器下载文件到连接路由的存储设备中，晚上睡觉前，电脑一关，路由器自动把需要的文件下载好，或者上半时通过手机提交下载任务，下班回家电影直接下载好，这个功能多方便。<br>&gt;<br>&gt; 3、<strong>网络存储、共享</strong>，电脑上下载的电影如何想用手机或者平板电脑看往往需要拷贝，费时费力，而有的移动设备本身存储空间太小，看个高清也不方便，网络存储就发挥作用了，在自己的局域网内通过路由实现文件共享，不同设备之间不需要拷来拷去，直接通过网络直接存取。<br>&gt;<br>&gt; 4、<strong>远程管理</strong>，除了上面所说的，可以远程提交下载任务外，路由器可以在远程查询控制。<br><br>以上特点节选自雷锋网文章《大战前夕说路由》<br><br>就目前来说，以上几点是很好的解决了用户的痛点。国内网络慢、传统路由器管理麻烦、界面死板难用。而小米今天发布的自带1TB硬盘的MI路由确实是在主推脱机下载和网络存储功能。<br><br>但是，智能路由器的功能仅在于此吗？依我看，远远超过这些。<br><br>就目前互联网和通讯行业的发展趋势来说，网速会越来越快，资费也会越来越便宜；再加上在线视频的蓬勃发展，用户在线看高清视频越来越方便，除少数冷门视频或电影以外，绝大部分都能在视频网站上满足。增加网速、脱机下载、本地网络存储等一系列由于网速慢而开发出来的功能都将在不远的将来被淘汰。而家庭共享网络这样的需求实在太弱，而未来随着云服务的不断发展和网络速度的增长，本地存储将会像当年的CD一样慢慢淡出人们的视野，唯一值得说的便是第四点—远程管理。<br><br>路由器作为一个连接因特网与家庭所有电子智能设备的装置，位于家庭智能网络的最底层。所有的联网设备都将于路由器相连，电脑、手机、平板电脑，我们再往深处想一下，智能电视、智能电灯、智能热水器，再想深想一下，家里还有什么，智能门窗、智能窗帘、智能加湿器、甚至是停在车库里的特斯拉汽车。<br><br>家居智能化的趋势越来越明显、发展的速度也越来越快。互联网盒子、互联网电视早已陷入一片红海，未来还有无数的智能热水器、智能电灯、智能洗衣机、智能窗帘、智能电热毯、智能空调等等。而这所有的智能设备都连接这个路由器上。路由器变成智能家居中最重要的一个节点。如果我们开发一套控制系统安装在路由器上，用它来控制我们的电视、我们的家里空气的质量、甚至是停在车库的智能汽车。智能路由器将变成一个控制台，掌握着我们生活的方方面面。你今后所有的控制都将通过“手机—路由器—智能设备”这样一个流程来进行。<br><br>智能家居市场是一个远比手机、电脑大的市场，伴随着移动互联网的极速发展，智能家居将赢来一股巨大的发展浪潮，这必将是互联网各巨头争相争夺的的下一个血腥战场。谁抢占了最低层的入口，谁就将在未来的一场大战中取得先发优势。<br><br>现在你看明白了，为什么如此多的巨头进入想抢占这块肥肉了吗？<br><br></p>
-
-<p><a href="http://huliz.lofter.com" target="_blank" rel="external">LOFTER：王狐狸@PM</a>&nbsp;&nbsp;&nbsp;<a href="http://huliz.lofter.com/post/298104_af3ab3" target="_blank" rel="external">http://huliz.lofter.com/post/298104_af3ab3</a></p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2013/11/19/重读《用户体验要素》/"><span>重读《用户体验要素》</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2013/11/19/重读《用户体验要素》/" rel="bookmark">
-        <time class="entry-date published" datetime="2013-11-19T13:17:55.000Z">
-          2013-11-19
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>（成文于2013年4月，原载于个人独立博客）<br><br>近几天重看了一遍Ajax之父Jesse James Garrett的《用户体验要素之以用户为中心的产品设计》一书，又长了不少知识，于是，制作了书中五个层面重点内容的思维导图，一是总结一下，二是如果碰巧你正想看这本书，无意中进入我的博客，能让你了解一下整本书的要点。<br><br><img src="http://imglf2.ph.126.net/ur45uh3FUJsWKk0SbXMKLA==/4859383998032869574.jpeg" alt=""><br><br>下载地址：<a href="http://pan.baidu.com/s/1GJ47W" target="_blank" rel="external">http://pan.baidu.com/s/1GJ47W</a><br></p>
-
-<p><a href="http://huliz.lofter.com" target="_blank" rel="external">LOFTER：王狐狸@PM</a>&nbsp;&nbsp;&nbsp;<a href="http://huliz.lofter.com/post/298104_aed238" target="_blank" rel="external">http://huliz.lofter.com/post/298104_aed238</a></p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2013/11/19/Fuubo微博android客户端体验/"><span>Fuubo微博android客户端体验</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2013/11/19/Fuubo微博android客户端体验/" rel="bookmark">
-        <time class="entry-date published" datetime="2013-11-19T12:34:20.000Z">
-          2013-11-19
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>（成文于2013年3月，原载于个人独立博客）<br><br><img src="http://imglf0.ph.126.net/0EZPBujRatPooAS_J-eehQ==/138485688641795754.jpg" alt=""><br><br>体验机型：小米1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>Fuubo版本：v1.2.0.1608&nbsp;小米专版<br><br><strong>Fuubo界面</strong><br><br>Fuubo上边栏采用蓝色半透明边条，左侧为Fuubo标志，右侧为分组。Fuubo并无下边栏，在右下角有灰色的Smart Panel，点击会出现扇形的三个按钮，在不同的界面中间的按钮会发生变化。Fuubo的界面简洁，方便，而且非常适合单手操作，当你挤在地铁里刷微博的时候，你会为这种设计感到欣慰。<br><br><img src="http://imglf0.ph.126.net/08CdKR_5Yw4byzXA503hyQ==/4829547650501484720.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/XU5cv19q2F4FuKHxYzR99Q==/3768668463279022223.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/BoLy5TTUwVDCm608wfUQBw==/3914753976192242084.png" alt=""><br><br>Fuubo的昵称名文字字号明显的大于微博内容的字号，而且昵称文字是加粗处理。很明显微博的内容才是主体，理应采用更显眼的字体，Fuubo这种反视觉的设计让我刚开始使用时极不习惯，特别是在看评论的时候，感觉满屏都是用户名。Fuubo并没有采用官方微博客户端右下角的“赞”按钮，取而代之的是评论和转发按钮，在首页就可以进行评论和转发，更加方便。两个按钮间距适当，虽然按钮较小但一般很少会出现误点情况，当然可能仍然会有一部分会存在点不准的情况，Fuubo给出了更好的方法，在下文特色功能里会有详细介绍。而官方客户端的评论转发就麻烦了，你必须点击你想评论的微博，然后点击下边栏的评论或者转发按钮。每增加一步，都会让用户评论和转发的欲望降低，这点上，新浪微博官方客户端真应该向Fuubo多学习学习。<br><br>发微博图片的时候，除了常规的立即拍照和本地图片以外还有一个最后拍摄选项。有时候一个好作品与普通产品的差别就在是否有最后拍摄这种细节上，想想你平时的习惯，是不是先拍照后然后打开微博分享给朋友？Fuubo提供了9种可选主题，设置界面里特别为广大的左撇子提供了左手选项，当然对于Fuubo特色的Smart Gesture也提供了开启关闭按钮。<br><br><img src="http://imglf1.ph.126.net/swZV51SsblVLcd9Hwmif9g==/2031404907020958214.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf1.ph.126.net/0xfAbqlJjOT5tXpiMBY5tw==/2871889187478928018.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf0.ph.126.net/aAN_2iKYWEcncMsehVrRAg==/2268969787364751324.png" alt=""><br><br><strong>Fuubo特色功能</strong><br><br>1、Smart Panel<br><br>右下角的半透明灰色扇形就是它了，这种设计大大增强了单手操作的便捷性。当然，新浪微博在小屏幕上单手也具有操作性，比如本人所用的小米1，但是你当你使用NOTE之类的大屏幕手机或者平板时，单手操作会让你抓狂。Smart Panel在不同的界面中间的按钮会发生变化，主页时，分别是发微博、@、刷新。@我的界面中间按钮会变成评论，评论我的界面会变为回到首页按钮。<br><br><img src="http://imglf0.ph.126.net/XH5D1T9O61YQc0PGH7tcWA==/4803651952644255177.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf1.ph.126.net/NG-LYk6TxE-a6n7ZlPb2Og==/748441963173786823.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/XU5cv19q2F4FuKHxYzR99Q==/3768668463279022223.png" alt=""><br><br>2、Smart Drawer<br><br>点击屏幕左侧或者右侧，会出现Smart Drawer。在这里你可以在首页方便的进行收藏、复制、评论和转发。请记住，左侧和右侧是只有手指宽的区域会唤醒Smart Drawer，粗心的妹子和抠脚大汉们请稍微细心点。<br><br><img src="http://imglf1.ph.126.net/ib3y6vI4qBS70eZKobv5Vw==/2250955388855270731.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/fh5uoq3O52eYHV6MpuVLgw==/1600466717676928499.png" alt=""><br><br>3、Smart Gesture<br><br>在微博文字区域，向左或者向右划就可以直接进入评论或转发界面，当然前提是你开启了Smart Gesture。官方客户端颤抖吧，你在官方客户端刚找到转发按钮时，使用Fuubo的人早就已经转发成功开始评论下一条微博了。<br><br><img src="http://imglf1.ph.126.net/pnA4Mb_DnHq5H39--Iq11w==/3374040545931109051.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf0.ph.126.net/qRS1mvOdg_OPSg796GvDOg==/698339417319291459.png" alt=""><br><br>4、图片预览、定时微博<br><br>定时微博是好东西，比如你有个喜欢玩微博的妹子，让你在微博上每天十点给他说晚安，可是这时你正在撸啊撸，你怎么办？用Fuubo定时微博吧，骚年。如果你接到你一条短信，告诉你大概8:20发，你懂的。<br><br><img src="http://imglf2.ph.126.net/tQUunzgycpE1l_fk5RiqXw==/3128594366239146080.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/4m--gDb5p-XPJKV6GxXNfw==/2273191912015414844.png" alt=""><br><br>5、方便的侧边栏<br><br>Fuubo首页上尽可能的减少了不相干的按钮以使界面变得简洁，其他优先级低的按钮比如设置、个人主页等被隐藏到侧边栏里。从屏幕左侧或者右侧向另外一边滑动变可以进入侧边栏进行设置。<br><br><img src="http://imglf2.ph.126.net/wJjG775a9iDQG5xLOx-pbA==/2859222813527183819.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/mG0B6z0HpfTXS69Sb-WfHQ==/1745989280636372045.png" alt=""><br><br>Fuubo官网：<a href="http://www.fuubo.me/" target="_blank" rel="external">www.fuubo.me </a><br><br>我的微博：<a href="http://weibo.com/335330125" target="_blank" rel="external">狐狸-huliz</a>&nbsp;&nbsp;&nbsp;&nbsp;欢迎关注！<br><br></p>
-
-<p><a href="http://huliz.lofter.com" target="_blank" rel="external">LOFTER：王狐狸@PM</a>&nbsp;&nbsp;&nbsp;<a href="http://huliz.lofter.com/post/298104_aec85d" target="_blank" rel="external">http://huliz.lofter.com/post/298104_aec85d</a></p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2013/11/19/基于LBS精准广告的构想/"><span>基于LBS精准广告的构想</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2013/11/19/基于LBS精准广告的构想/" rel="bookmark">
-        <time class="entry-date published" datetime="2013-11-19T12:29:36.000Z">
-          2013-11-19
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>（成文于2013年4月，原载于个人独立博客）<br><br><strong>缘由</strong><br><br>前几日，闲逛到北京路，上下九一片，于是想夏天来临，想去买几件tshirt和短裤，却懒得一家家店铺去逛，便想到如果附近的商家能把店里的商品优惠信息推送给我该是一件多么惬意的事情，比如我爱好的优衣库之类，遂产生了基于LBS精准广告推送的主意。<br><br><strong>&nbsp;**</strong>产品概念<strong><br><br>当用户到达某一地点后，系统自动将附近商家的商品信息与优惠活动直接推送到用户手机。
-
-</strong>&nbsp;产品线<strong><br><br>包括网页版、手机客户端（支持IOS、Android、WindowsPhone等常见手机客户端）<br><br>网页版：只有商家入口，商家在网站上注册登录，创建自己的店铺，更新店铺活动和打折信息。<br><br>手机客户端：用户用于接收和查询附近商铺信息。
-
-</strong>&nbsp;产品信息图<strong><br><br><img src="http://imglf2.ph.126.net/cT3od4Y7a1vYEuzpVtK4ww==/1827898498859154068.jpg" alt="">
-
-</strong>产品功能<strong><br><br>网页版：<br><br>1、店铺页面：创建店铺信息，店铺名、主营业务、地址、电话、商品信息等<br><br>2、优惠活动页面：优惠时间段，优惠活动详情，拥有定时发布系统<br><br>3、付费页面：付费类型、各种付费通道（支付宝、网银等）<br><br>4、查看用户评价页面<br><br>手机客户端：<br><br>1、优惠信息页面：按产品类型分类、按距离排序、同一商品按价格排序<br><br>2、黑白名单设置：用户可以自由设置哪些地点、哪些商品类别设置是单个商品（比如iphone5）可以推送。<br><br>3、导航功能：当用户进入优惠店铺详情，提供用户所在位置到店铺的地图导航按钮。<br><br>4、店铺评价系统：用户可以对消费过的相关商家进行服务和商品评价<br><br>5、重点推荐系统：比如在数码城，优先推荐数码产品信息；在火车站汽车站等交通集散地，优先推荐酒店信息；在美食街；优先推送特色美食信息。<br><br>6、提供虚拟定位服务，即用户不需要到指定地点也能获得相关区域的优惠信息。
-
-</strong>&nbsp;用户从中获得什么？<strong><br><br>商家<br><br>1、能有效推广自家产品<br><br>2、刺激附近用户的冲动消费<br><br>3、广告精准度高，转化率高<br><br>4、时效性好，对于位置较偏店铺，能达到与临街店铺一样的宣传效果<br><br>5、比传统广告渠道价格低效果好<br><br>个人用户<br><br>1、随时随地获取附近自己想要的产品的优惠信息，自己赚得实惠<br><br>2、凭推送的优惠券，不购物也能得到一定实物奖励。（比如夏天时可在某商家领取矿泉水，在其他店铺领取纪念品）<br><br>3、凭推送优惠券，享受特殊折扣，直接获取商家一定级别的会员卡。<br><br>4、从购物纠结中解脱自己，迅速找到自己想要的品牌和商品的优惠信息（eg当你去电脑城买手机时，无数的商家卖同一款产品，比如IPHONE4S，接受附近优惠推送，能让你在上百家商铺中找到最优惠的价格和活动）
-
-</strong>产品怎样盈利模式<strong><br><br>向商家收取一定的广告费用，可按月按年或按次收费。
-
-</strong>推广方式**<br><br>前期：商家免费入住，免费发送信息。用户安装并保持在线一个月，获取一定数额的电话费或者是电话充值卡。<br><br>中期：向商家收取优惠的广告费用。推荐朋友安装，成功后给予一定奖励，利用用户口碑传播<br><br>后期：商家全额收取费用，各大论坛、软件商店推广。<br><br></p>
-
-<p><a href="http://huliz.lofter.com" target="_blank" rel="external">LOFTER：王狐狸@PM</a>&nbsp;&nbsp;&nbsp;<a href="http://huliz.lofter.com/post/298104_aec83a" target="_blank" rel="external">http://huliz.lofter.com/post/298104_aec83a</a></p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-
-<nav class="pagination">
-  
-  <a href="/page/2/" class="pagination-prev">上一页</a>
-  
-  
-</nav>
-    </main>
-
-    <footer class="site-footer">
-  <p class="site-info">
-    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
-    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
-    </br>
-    
-    &copy; 2016 wanghuli
-    
-  </p>
-</footer>
-    
-  </div>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="/asserts/img/wanghuli.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Wanghuli</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">番茄范-知易行难</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔/">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/yangone" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="http://www.weibo.com/335330125" title="weibo">weibo</a>
+		        
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/wang-hu-li-10" title="zhihu">zhihu</a>
+		        
+					<a class="mail" target="_blank" href="mailto: yangonee@gmail.com" title="mail">mail</a>
+		        
+			</div>
+		</nav>
+	</header>		
 </div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">Wanghuli</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="/asserts/img/wanghuli.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Wanghuli</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">番茄范-知易行难</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔/">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/yangone" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://www.weibo.com/335330125" title="weibo">weibo</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/wang-hu-li-10" title="zhihu">zhihu</a>
+			        
+						<a class="mail" target="_blank" href="mailto: yangonee@gmail.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        
+  
+    <article id="post-智能路由器与未来智能生活" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/11/20/智能路由器与未来智能生活/">智能路由器与未来智能生活</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://imglf2.ph.126.net/MBCMTmBohr7VtDf4tYwTBQ==/2035064081718200417.jpg" alt=""></p>
+<p>今天小米发布了新玩具—MIWIFI。一款智能路由器。智能路由器大战至此揭开序幕。</p>
+<p>一时间，360红衣教主也宣布智能路由器正在研发之中，即将上市。果壳网也宣称即将发布智能路由器。而早在这之前，号称国内第一款智能路由器的极路由早已在业内掀起一股声势浩大的智能浪潮。今天，极路由创始人王楚云甚至发文称“2013年是智能路由器元年”。</p>
+<p>为什么一个小小的路由器能吸引这么大的关注力，引得众多巨头争相进入？</p>
+<p>首先我们来看一下目前智能路由器比较受欢迎的几个功能。</p>
+<blockquote>
+<p>1、<strong>多拨</strong>，提升网速这是很多人最关心的功能，由于运营商线制了端口网速，于是多拨的功能就出来了，通过交换机和路由器的配合，通过路由对多个端口进行拨号，于是就能实现了下载速度成倍的增长，单线多拨、多线多拨，看着自己的2M宽带能够有4M甚至8M的速度，这恐怕是折腾路由最大的动力了。</p>
+<p>2、<strong>脱机下载</strong>，顾名思义，脱机下载就是不用开电脑就能够下载文件，用路由器下载文件到连接路由的存储设备中，晚上睡觉前，电脑一关，路由器自动把需要的文件下载好，或者上半时通过手机提交下载任务，下班回家电影直接下载好，这个功能多方便。</p>
+<p>3、<strong>网络存储、共享</strong>，电脑上下载的电影如何想用手机或者平板电脑看往往需要拷贝，费时费力，而有的移动设备本身存储空间太小，看个高清也不方便，网络存储就发挥作用了，在自己的局域网内通过路由实现文件共享，不同设备之间不需要拷来拷去，直接通过网络直接存取。</p>
+<p>4、<strong>远程管理</strong>，除了上面所说的，可以远程提交下载任务外，路由器可以在远程查询控制。 </p>
+</blockquote>
+<p>以上特点节选自雷锋网文章《大战前夕说路由》</p>
+<p>就目前来说，以上几点是很好的解决了用户的痛点。国内网络慢、传统路由器管理麻烦、界面死板难用。而小米今天发布的自带1TB硬盘的MI路由确实是在主推脱机下载和网络存储功能。</p>
+<p>但是，智能路由器的功能仅在于此吗？依我看，远远超过这些。</p>
+<p>就目前互联网和通讯行业的发展趋势来说，网速会越来越快，资费也会越来越便宜；再加上在线视频的蓬勃发展，用户在线看高清视频越来越方便，除少数冷门视频或电影以外，绝大部分都能在视频网站上满足。增加网速、脱机下载、本地网络存储等一系列由于网速慢而开发出来的功能都将在不远的将来被淘汰。而家庭共享网络这样的需求实在太弱，而未来随着云服务的不断发展和网络速度的增长，本地存储将会像当年的CD一样慢慢淡出人们的视野，唯一值得说的便是第四点—远程管理。</p>
+<p>路由器作为一个连接因特网与家庭所有电子智能设备的装置，位于家庭智能网络的最底层。所有的联网设备都将于路由器相连，电脑、手机、平板电脑，我们再往深处想一下，智能电视、智能电灯、智能热水器，再想深想一下，家里还有什么，智能门窗、智能窗帘、智能加湿器、甚至是停在车库里的特斯拉汽车。</p>
+<p>家居智能化的趋势越来越明显、发展的速度也越来越快。互联网盒子、互联网电视早已陷入一片红海，未来还有无数的智能热水器、智能电灯、智能洗衣机、智能窗帘、智能电热毯、智能空调等等。而这所有的智能设备都连接这个路由器上。路由器变成智能家居中最重要的一个节点。如果我们开发一套控制系统安装在路由器上，用它来控制我们的电视、我们的家里空气的质量、甚至是停在车库的智能汽车。智能路由器将变成一个控制台，掌握着我们生活的方方面面。你今后所有的控制都将通过“手机—路由器—智能设备”这样一个流程来进行。</p>
+<p>智能家居市场是一个远比手机、电脑大的市场，伴随着移动互联网的极速发展，智能家居将赢来一股巨大的发展浪潮，这必将是互联网各巨头争相争夺的的下一个血腥战场。谁抢占了最低层的入口，谁就将在未来的一场大战中取得先发优势。</p>
+<p>现在你看明白了，为什么如此多的巨头进入想抢占这块肥肉了吗？</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2013/11/20/智能路由器与未来智能生活/" class="archive-article-date">
+  	<time datetime="2013-11-20T12:41:50.000Z" itemprop="datePublished"><i class="icon-clock"></i>2013-11-20</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-重读《用户体验要素》" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/04/19/重读《用户体验要素》/">重读《用户体验要素》</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>近几天重看了一遍Ajax之父Jesse James Garrett的《用户体验要素之以用户为中心的产品设计》一书，又长了不少知识，于是，制作了书中五个层面重点内容的思维导图，一是总结一下，二是如果碰巧你正想看这本书，无意中进入我的博客，能让你了解一下整本书的要点。</p>
+<p><img src="http://imglf2.ph.126.net/ur45uh3FUJsWKk0SbXMKLA==/4859383998032869574.jpeg" alt=""></p>
+<p>下载地址：<a href="http://pan.baidu.com/s/1GJ47W" target="_blank" rel="external">http://pan.baidu.com/s/1GJ47W</a><br></p><p></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2013/04/19/重读《用户体验要素》/" class="archive-article-date">
+  	<time datetime="2013-04-19T13:17:55.000Z" itemprop="datePublished"><i class="icon-clock"></i>2013-04-19</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/读书/">读书</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-基于LBS精准广告的构想" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/04/19/基于LBS精准广告的构想/">基于LBS精准广告的构想</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>缘由</strong></p>
+<p>前几日，闲逛到北京路，上下九一片，于是想夏天来临，想去买几件tshirt和短裤，却懒得一家家店铺去逛，便想到如果附近的商家能把店里的商品优惠信息推送给我该是一件多么惬意的事情，比如我爱好的优衣库之类，遂产生了基于LBS精准广告推送的主意。</p>
+<p><strong>产品概念</strong></p>
+<p>当用户到达某一地点后，系统自动将附近商家的商品信息与优惠活动直接推送到用户手机。</p>
+<p><strong>产品线</strong></p>
+<p>包括网页版、手机客户端（支持IOS、Android、WindowsPhone等常见手机客户端）</p>
+<p>网页版：只有商家入口，商家在网站上注册登录，创建自己的店铺，更新店铺活动和打折信息。</p>
+<p>手机客户端：用户用于接收和查询附近商铺信息。</p>
+<p><strong>产品信息图</strong></p>
+<p><img src="http://imglf2.ph.126.net/cT3od4Y7a1vYEuzpVtK4ww==/1827898498859154068.jpg" alt=""></p>
+<p><strong>产品功能</strong></p>
+<p>网页版：</p>
+<p>1、店铺页面：创建店铺信息，店铺名、主营业务、地址、电话、商品信息等</p>
+<p>2、优惠活动页面：优惠时间段，优惠活动详情，拥有定时发布系统</p>
+<p>3、付费页面：付费类型、各种付费通道（支付宝、网银等）</p>
+<p>4、查看用户评价页面</p>
+<p>手机客户端：</p>
+<p>1、优惠信息页面：按产品类型分类、按距离排序、同一商品按价格排序</p>
+<p>2、黑白名单设置：用户可以自由设置哪些地点、哪些商品类别设置是单个商品（比如iphone5）可以推送。</p>
+<p>3、导航功能：当用户进入优惠店铺详情，提供用户所在位置到店铺的地图导航按钮。</p>
+<p>4、店铺评价系统：用户可以对消费过的相关商家进行服务和商品评价</p>
+<p>5、重点推荐系统：比如在数码城，优先推荐数码产品信息；在火车站汽车站等交通集散地，优先推荐酒店信息；在美食街；优先推送特色美食信息。</p>
+<p>6、提供虚拟定位服务，即用户不需要到指定地点也能获得相关区域的优惠信息。</p>
+<p><strong>&nbsp;用户从中获得什么？</strong></p>
+<p>商家</p>
+<p>1、能有效推广自家产品</p>
+<p>2、刺激附近用户的冲动消费</p>
+<p>3、广告精准度高，转化率高</p>
+<p>4、时效性好，对于位置较偏店铺，能达到与临街店铺一样的宣传效果</p>
+<p>5、比传统广告渠道价格低效果好</p>
+<p>个人用户</p>
+<p>1、随时随地获取附近自己想要的产品的优惠信息，自己赚得实惠</p>
+<p>2、凭推送的优惠券，不购物也能得到一定实物奖励。（比如夏天时可在某商家领取矿泉水，在其他店铺领取纪念品）</p>
+<p>3、凭推送优惠券，享受特殊折扣，直接获取商家一定级别的会员卡。</p>
+<p>4、从购物纠结中解脱自己，迅速找到自己想要的品牌和商品的优惠信息（eg当你去电脑城买手机时，无数的商家卖同一款产品，比如IPHONE4S，接受附近优惠推送，能让你在上百家商铺中找到最优惠的价格和活动）</p>
+<p><strong>产品怎样盈利模式</strong></p>
+<p>向商家收取一定的广告费用，可按月按年或按次收费。</p>
+<p><strong>推广方式</strong></p>
+<p>前期：商家免费入住，免费发送信息。用户安装并保持在线一个月，获取一定数额的电话费或者是电话充值卡。</p>
+<p>中期：向商家收取优惠的广告费用。推荐朋友安装，成功后给予一定奖励，利用用户口碑传播</p>
+<p>后期：商家全额收取费用，各大论坛、软件商店推广。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2013/04/19/基于LBS精准广告的构想/" class="archive-article-date">
+  	<time datetime="2013-04-19T12:29:36.000Z" itemprop="datePublished"><i class="icon-clock"></i>2013-04-19</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-请不要放弃自己" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/03/12/请不要放弃自己/">请不要放弃自己</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>请不要放弃自己，最爱的你。</p>
+<p>请不要放弃你曾喜爱过的东西，纵使一切过于艰难。</p>
+<p>从头再来的艰辛，不是每一个人都能体验到，你不是曾说，生命的意义不在于它的长度，而在于它的广度;。即使这一切是徒劳无功，因为曾追求过，难受过，你便不曾为此而后悔。</p>
+<p>人生的事哪有不困难的，哪有不经历一番苦痛的，实现自己的梦想，哪有不经过努力的。</p>
+<p>一个人最困难的事在于选择，选择事业、选择伴侣、选择自己的生活方式。既然你已经历那番苦痛的挣扎，又何苦再回首过那蹉跎的岁月，浪费那无聊的时间。</p>
+<p>当你放弃曾经那条明朗的大道，你就该想到今日的这番狼狈。狼狈不过是暂时的，你心里再明了不过。不要急着去想那些未知的事，想想那句曾被你鄙视、百般嘲笑的名言。“自己选择的路，跪着也要走完。”</p>
+<p>一切皆不可等待，尽管你只是一颗小水滴，即将跳到三峡大坝蓄起的数百亿方江水中，那也勇敢的跳下去吧，跳下你才有资格成为那冲出大坝的第一缕浪花，在岸边一次又一次的徘徊，只会让太阳炙烤，最终变成一团散漫的水汽逐渐消失。</p>
+<p>人生苦短如斯，却不必如此急迫。着急容易让人变了猴子，捡了西瓜丢了玉米，扔了西瓜又去追兔子，最后下山时一无所获。做好眼前的事并不如想象的那么难，却也丝毫不简单，只愿你明白其中的道理，不，只愿你能踏踏实实去做，少了那些怨言，少了那毫无用处的消遣，少了那些无味的拖延，并不让你过的难受。</p>
+<p>把你的眼光放低一点，再放低一点，曾经的一切不可再回头。重新审视那些你曾经鄙视的人，重新看看眼前的路，这一路即使沟沟坎坎、跌跌撞撞，却也有花香可闻。山的那边是海，那辽阔的海，曾是你与人许下的梦想。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2013/03/12/请不要放弃自己/" class="archive-article-date">
+  	<time datetime="2013-03-12T06:09:22.000Z" itemprop="datePublished"><i class="icon-clock"></i>2013-03-12</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Fuubo微博android客户端体验" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2012/08/19/Fuubo微博android客户端体验/">Fuubo微博android客户端体验</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://imglf0.ph.126.net/0EZPBujRatPooAS_J-eehQ==/138485688641795754.jpg" alt=""></p>
+<p>体验机型：小米1 </p>
+<p>Fuubo版本：v1.2.0.1608&nbsp;小米专版</p>
+<p><strong>Fuubo界面</strong></p>
+<p>Fuubo上边栏采用蓝色半透明边条，左侧为Fuubo标志，右侧为分组。Fuubo并无下边栏，在右下角有灰色的Smart Panel，点击会出现扇形的三个按钮，在不同的界面中间的按钮会发生变化。Fuubo的界面简洁，方便，而且非常适合单手操作，当你挤在地铁里刷微博的时候，你会为这种设计感到欣慰。</p>
+<p><img src="http://imglf0.ph.126.net/08CdKR_5Yw4byzXA503hyQ==/4829547650501484720.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/XU5cv19q2F4FuKHxYzR99Q==/3768668463279022223.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/BoLy5TTUwVDCm608wfUQBw==/3914753976192242084.png" alt=""></p>
+<p>Fuubo的昵称名文字字号明显的大于微博内容的字号，而且昵称文字是加粗处理。很明显微博的内容才是主体，理应采用更显眼的字体，Fuubo这种反视觉的设计让我刚开始使用时极不习惯，特别是在看评论的时候，感觉满屏都是用户名。Fuubo并没有采用官方微博客户端右下角的“赞”按钮，取而代之的是评论和转发按钮，在首页就可以进行评论和转发，更加方便。两个按钮间距适当，虽然按钮较小但一般很少会出现误点情况，当然可能仍然会有一部分会存在点不准的情况，Fuubo给出了更好的方法，在下文特色功能里会有详细介绍。而官方客户端的评论转发就麻烦了，你必须点击你想评论的微博，然后点击下边栏的评论或者转发按钮。每增加一步，都会让用户评论和转发的欲望降低，这点上，新浪微博官方客户端真应该向Fuubo多学习学习。</p>
+<p>发微博图片的时候，除了常规的立即拍照和本地图片以外还有一个最后拍摄选项。有时候一个好作品与普通产品的差别就在是否有最后拍摄这种细节上，想想你平时的习惯，是不是先拍照后然后打开微博分享给朋友？Fuubo提供了9种可选主题，设置界面里特别为广大的左撇子提供了左手选项，当然对于Fuubo特色的Smart Gesture也提供了开启关闭按钮。</p>
+<p><img src="http://imglf1.ph.126.net/swZV51SsblVLcd9Hwmif9g==/2031404907020958214.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf1.ph.126.net/0xfAbqlJjOT5tXpiMBY5tw==/2871889187478928018.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf0.ph.126.net/aAN_2iKYWEcncMsehVrRAg==/2268969787364751324.png" alt=""></p>
+<p><strong>Fuubo特色功能</strong></p>
+<p>1、Smart Panel</p>
+<p>右下角的半透明灰色扇形就是它了，这种设计大大增强了单手操作的便捷性。当然，新浪微博在小屏幕上单手也具有操作性，比如本人所用的小米1，但是你当你使用NOTE之类的大屏幕手机或者平板时，单手操作会让你抓狂。Smart Panel在不同的界面中间的按钮会发生变化，主页时，分别是发微博、@、刷新。@我的界面中间按钮会变成评论，评论我的界面会变为回到首页按钮。</p>
+<p><img src="http://imglf0.ph.126.net/XH5D1T9O61YQc0PGH7tcWA==/4803651952644255177.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf1.ph.126.net/NG-LYk6TxE-a6n7ZlPb2Og==/748441963173786823.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/XU5cv19q2F4FuKHxYzR99Q==/3768668463279022223.png" alt=""></p>
+<p>2、Smart Drawer</p>
+<p>点击屏幕左侧或者右侧，会出现Smart Drawer。在这里你可以在首页方便的进行收藏、复制、评论和转发。请记住，左侧和右侧是只有手指宽的区域会唤醒Smart Drawer，粗心的妹子和抠脚大汉们请稍微细心点。</p>
+<p><img src="http://imglf1.ph.126.net/ib3y6vI4qBS70eZKobv5Vw==/2250955388855270731.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/fh5uoq3O52eYHV6MpuVLgw==/1600466717676928499.png" alt=""></p>
+<p>3、Smart Gesture</p>
+<p>在微博文字区域，向左或者向右划就可以直接进入评论或转发界面，当然前提是你开启了Smart Gesture。官方客户端颤抖吧，你在官方客户端刚找到转发按钮时，使用Fuubo的人早就已经转发成功开始评论下一条微博了。</p>
+<p><img src="http://imglf1.ph.126.net/pnA4Mb_DnHq5H39--Iq11w==/3374040545931109051.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf0.ph.126.net/qRS1mvOdg_OPSg796GvDOg==/698339417319291459.png" alt=""></p>
+<p>4、图片预览、定时微博</p>
+<p>定时微博是好东西，比如你有个喜欢玩微博的妹子，让你在微博上每天十点给他说晚安，可是这时你正在撸啊撸，你怎么办？用Fuubo定时微博吧，骚年。如果你接到你一条短信，告诉你大概8:20发，你懂的。</p>
+<p><img src="http://imglf2.ph.126.net/tQUunzgycpE1l_fk5RiqXw==/3128594366239146080.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/4m--gDb5p-XPJKV6GxXNfw==/2273191912015414844.png" alt=""></p>
+<p>5、方便的侧边栏</p>
+<p>Fuubo首页上尽可能的减少了不相干的按钮以使界面变得简洁，其他优先级低的按钮比如设置、个人主页等被隐藏到侧边栏里。从屏幕左侧或者右侧向另外一边滑动变可以进入侧边栏进行设置。</p>
+<p><img src="http://imglf2.ph.126.net/wJjG775a9iDQG5xLOx-pbA==/2859222813527183819.png" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://imglf2.ph.126.net/mG0B6z0HpfTXS69Sb-WfHQ==/1745989280636372045.png" alt=""></p>
+<p>Fuubo官网：<a href="http://www.fuubo.me/" target="_blank" rel="external">www.fuubo.me </a></p>
+<p>我的微博：<a href="http://weibo.com/335330125" target="_blank" rel="external">狐狸-huliz</a>&nbsp;&nbsp;&nbsp;&nbsp;欢迎关注！</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2012/08/19/Fuubo微博android客户端体验/" class="archive-article-date">
+  	<time datetime="2012-08-19T12:34:20.000Z" itemprop="datePublished"><i class="icon-clock"></i>2012-08-19</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/产品体验/">产品体验</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    </nav>
+  
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Wanghuli
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/交互设计/" style="font-size: 10px;">交互设计</a> <a href="/tags/产品体验/" style="font-size: 10px;">产品体验</a> <a href="/tags/效率/" style="font-size: 15px;">效率</a> <a href="/tags/沟通/" style="font-size: 10px;">沟通</a> <a href="/tags/用户研究/" style="font-size: 10px;">用户研究</a> <a href="/tags/读书/" style="font-size: 20px;">读书</a> <a href="/tags/随笔/" style="font-size: 20px;">随笔</a> <a href="/tags/需求/" style="font-size: 10px;">需求</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.fanqiefan.com/">番茄范</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.kanjk.com/">看健康</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">王狐狸&lt;br&gt;&lt;br&gt;成长中的产品经理&lt;br&gt;微信：yangonee&lt;br&gt;</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
 </body>
 </html>
